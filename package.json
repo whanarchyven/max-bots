@@ -6,7 +6,15 @@
   "scripts": {
     "start:all": "bun run start-all.ts",
     "start": "bun run index.ts",
-    "start:convex": "bunx convex dev"
+    "start:convex": "bunx convex dev",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop ecosystem.config.js",
+    "pm2:restart": "pm2 restart ecosystem.config.js",
+    "pm2:delete": "pm2 delete ecosystem.config.js",
+    "pm2:status": "pm2 status",
+    "pm2:logs": "pm2 logs",
+    "pm2:logs:bot": "pm2 logs max-bot",
+    "pm2:logs:convex": "pm2 logs convex"
   },
   "devDependencies": {
     "@types/bun": "latest"
