@@ -1,0 +1,21 @@
+{
+  "name": "max-bot",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start:all": "bun run start-all.ts",
+    "start": "bun run index.ts",
+    "start:convex": "bunx convex dev"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "convex": "^1.28.0",
+    "grammy": "^1.21.1"
+  }
+}
